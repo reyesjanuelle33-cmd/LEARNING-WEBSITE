@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse | Learn to Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- AUTHENTICATION PAGE -->
+    <main class="auth-page" id="authPage">
+
+        <div class="auth-container" id="authContainer">
+
+            <!-- LEFT SIDE -->
+            <section class="auth-left">
+                <div class="brand">
+                    <div class="brand-icon">&lt;/&gt;</div>
+                    <span>CODEVERSE</span>
+                </div>
+
+                <div class="left-content">
+                    <span class="eyebrow">YOUR CODING JOURNEY STARTS HERE</span>
+                    <h1>Build your skills.<br>
+                        <span>Shape your future.</span>
+                    </h1>
+                    <p>
+                        Learn programming, explore new technologies,
+                        and turn your ideas into something amazing.
+                    </p>
+
+                    <div class="code-card">
+                        <div class="code-header">
+                            <div class="dots">
+                                <i></i><i></i><i></i>
+                            </div>
+                            <span>hello-world.js</span>
+                        </div>
+                        <div class="code-content">
+                            <p><span class="purple">const</span> future = <span class="green">"Developer"</span>;</p>
+                            <p><span class="purple">function</span> <span class="blue">startLearning</span>() {</p>
+                            <p class="indent">console.log(<span class="green">"Hello, World!"</span>);</p>
+                            <p class="indent">return <span class="green">"Keep Learning"</span>;</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left-footer">
+                    <span>© 2026 CODEVERSE</span>
+                    <span>LEARN · CODE · CREATE</span>
+                </div>
+            </section>
+
+            <!-- RIGHT SIDE -->
+            <section class="auth-right">
+
+                <!-- LOGIN FORM -->
+                <div class="form-box login-box">
+                    <div class="mobile-brand">CODEVERSE</div>
+
+                    <span class="form-tag">WELCOME BACK</span>
+                    <h2>Sign in to your account</h2>
+                    <p class="form-description">
+                        Continue your journey and keep learning.
+                    </p>
+
+                    <form id="loginForm">
+                        <label for="loginEmail">Email or Username</label>
+                        <input type="text" id="loginEmail"
+                            placeholder="Enter your email or username" required>
+
+                        <div class="password-heading">
+                            <label for="loginPassword">Password</label>
+                        </div>
+                        <input type="password" id="loginPassword"
+                            placeholder="Enter your password" required>
+
+                        <button type="submit" class="main-btn">
+                            Sign In <span>→</span>
+                        </button>
+                    </form>
+
+                    <div class="divider"><span>OR CONTINUE WITH</span></div>
+
+                    <div class="social-buttons">
+                        <button class="social-btn" id="googleLogin">
+                            <span class="google-logo">G</span>
+                            Google
+                        </button>
+
+                        <button class="social-btn" id="facebookLogin">
+                            <span class="facebook-logo">f</span>
+                            Facebook
+                        </button>
+                    </div>
+
+                    <p class="switch-text">
+                        Don't have an account?
+                        <button type="button" id="showRegister">Create account</button>
+                    </p>
+                </div>
+
+                <!-- REGISTER FORM -->
+                <div class="form-box register-box">
+                    <div class="mobile-brand">CODEVERSE</div>
+
+                    <span class="form-tag">JOIN OUR COMMUNITY</span>
+                    <h2>Create your account</h2>
+                    <p class="form-description">
+                        Start your coding journey with CodeVerse.
+                    </p>
+
+                    <form id="registerForm">
+
+                        <label for="regUsername">Username</label>
+                        <input type="text" id="regUsername"
+                            placeholder="Choose a username" required>
+
+                        <label for="regEmail">Email Address</label>
+                        <input type="email" id="regEmail"
+                            placeholder="Enter your email" required>
+
+                        <label for="regPassword">Password</label>
+                        <input type="password" id="regPassword"
+                            placeholder="Create a password" minlength="8" required>
+
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword"
+                            placeholder="Confirm your password" minlength="8" required>
+
+                        <button type="submit" class="main-btn">
+                            Create Account <span>→</span>
+                        </button>
+                    </form>
+
+                    <p class="switch-text">
+                        Already have an account?
+                        <button type="button" id="showLogin">Sign in</button>
+                    </p>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+
+    <!-- DASHBOARD -->
+    <main class="dashboard" id="dashboard">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">&lt;/&gt;</div>
+                <span>CODEVERSE</span>
+            </div>
+
+            <p class="nav-label">MENU</p>
+
+            <a href="#" class="nav-link active">⌂ <span>Dashboard</span></a>
+            <a href="#" class="nav-link">▤ <span>My Courses</span></a>
+            <a href="#" class="nav-link">⌘ <span>Practice Coding</span></a>
+            <a href="#" class="nav-link">▧ <span>Certificates</span></a>
+
+            <div class="sidebar-bottom">
+                <button id="logoutBtn" class="logout-btn">↪ Log Out</button>
+            </div>
+        </aside>
+
+        <section class="dashboard-content">
+
+            <header class="dashboard-header">
+                <div>
+                    <span class="form-tag">LEARNING SPACE</span>
+                    <h2>Welcome back, <span id="displayUsername">Student</span>!</h2>
+                    <p>Ready to learn something new today?</p>
+                </div>
+                <div class="profile-icon">👨‍💻</div>
+            </header>
+
+            <div class="welcome-banner">
+                <div>
+                    <span>YOUR JOURNEY STARTS HERE</span>
+                    <h1>Learn. Practice. Become a Developer.</h1>
+                    <p>Every expert was once a beginner. Start coding today!</p>
+                </div>
+                <div class="banner-icon">&lt;/&gt;</div>
+            </div>
+
+            <h3>Explore Programming Languages</h3>
+
+            <div class="course-grid">
+
+                <div class="course-card">
+                    <div class="course-icon html-icon">5</div>
+                    <h4>HTML</h4>
+                    <p>Learn the structure of websites.</p>
+                    <span>Beginner</span>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon css-icon">3</div>
+                    <h4>CSS</h4>
+                    <p>Design beautiful web pages.</p>
+                    <span>Beginner</span>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon js-icon">JS</div>
+                    <h4>JavaScript</h4>
+                    <p>Make websites interactive.</p>
+                    <span>Beginner</span>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon python-icon">Py</div>
+                    <h4>Python</h4>
+                    <p>Explore programming fundamentals.</p>
+                    <span>Beginner</span>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon cpp-icon">C++</div>
+                    <h4>C++</h4>
+                    <p>Understand programming logic.</p>
+                    <span>Beginner</span>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon sql-icon">DB</div>
+                    <h4>SQL</h4>
+                    <p>Learn database management.</p>
+                    <span>Beginner</span>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
